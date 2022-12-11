@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="send-button.css">
+    <script src="https://kit.fontawesome.com/979f4c711f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <canvas id="scene"></canvas>
+    <input id="copy" type="hidden" value="MR.MAG1C"/>
+    <script src="name.js"></script>
+    <button id="contact" class="button-contact" type="button" value="/contact">/contact</button>
+    <div id="overlay"></div>
+    <div id="popup" style="align-items: center;">
+        <div class="container"></div>
+            <div class="contact-form">
+                <form action="send_mail.php" method="post">
+                    <div class="mail-form">
+                        <div>
+                        <label>
+                            <input class="discord-username" type="text" placeholder="Username#1234*" name="first_name" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <input id="email" name="email_address" type="email" placeholder="Gmail*" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"> required />
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <textarea name="comments" id="message" cols="63" rows="8" placeholder="Message" required></textarea>
+                        </label>
+                    </div>
+                    <div class="submit-button">
+                        <button class="submit" value="Download CTA"><span>Send<i class="fa-solid fa-truck-fast"></i></span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
+                    </div>
+                </form>
+                <div class="steam"></div>
+                    <p><a href="https://steamcommunity.com/id/MRxMAG1C/" target="_blank"><i class="fa-brands fa-steam"></i></a></p> 
+                </div>
+                <div class="discord">
+                    <p><a href="https://discord.gg/uzXH6aD" target="_blank"><i class="fab fa-discord"></i></a></p>
+                </div>        
+            </div>
+    <script src="contact.js"></script>
+</body>
+</html>

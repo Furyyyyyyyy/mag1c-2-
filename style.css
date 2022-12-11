@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+body{
+    margin:0;
+    overflow: hidden;
+    font-size:0;
+ 
+}
+canvas{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+.button-contact{
+    display: center;
+    width: 150px;
+    height: 70px;
+    line-height: 0px;
+    position: absolute;
+    bottom: 35px;
+    left: calc(50% - 125px);
+    background: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 white;c
+}
+
+.button-contact:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 blue;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+#overlay {
+   display:none;    /* This make it initially hidden                                           */
+   position:fixed;  /* This makes it so it says in a fixed position even if they scroll around */
+   left:34%;        /* This positions the element to the left most position                    */
+   top: 30%;         /* This positions the elment to the top most position                      */
+   width:551px;      /* This makes the element take up 100% of the parents width                */
+   height:435px;     /* This makes the element take up 100% of the parents height               */
+   background:black; /* Give it a black background                                              */
+   opacity:0.5;     /* Change the opacity to 50% so that is see through.                       */
+   z-index:99999;
+   border-radius: 10px;   /* Change the z-index so it will be above everything else                  */
+}
+
+#popup {
+   display:none;
+   position:fixed;
+   left:43%;              /* left and top here position top left page                                        */
+   top:40%;               /* of the element to the center of the                                             */
+   width: 100px;           /* Set the popup to have a specific width/height                                   */
+   height:300px;
+   margin-top:-75px;      /* To get the popup to center correctly we need                                    */
+   margin-left:-150px;    /* To displace the the top/left margins by half of the width/height                */
+   background:black;    /* Background of white                                                             */
+   border:none;           /* And give it a border                                                            */
+   z-index:100000;        /* Set z-index to 1 more than that of the overlay so the popup is over the overlay */
+}
+
+
+
+
+
+
